@@ -8,10 +8,6 @@ html{
     box-sizing: inherit;
 }
 
-body{
-    
-}
-
 img{
     max-width: 100%;
     height: auto;
@@ -303,7 +299,8 @@ img{
 .places__cards{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-gap: 10px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
 }
 
 .places__card{
@@ -380,7 +377,7 @@ img{
 .tours__tour{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0 108px; 
+    grid-column-gap: 108px; 
     align-items: center;
     margin-bottom: 77px;
 }
@@ -427,8 +424,9 @@ img{
 
 .top__cards{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 57px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 57px;
+    grid-row-gap: 57px; 
 }
 
 .top__card-pic{
@@ -439,6 +437,7 @@ img{
 .top__card{
     display: flex;
     flex-direction: column;
+    grid-column: span 2;
 }
 
 .top__card-stats{
@@ -576,7 +575,85 @@ img{
 
 /* Footer styles end */
 
-/*Footer end*/
+@media screen and (max-width: 960px){
+    .search-form__field {
+        margin-bottom: 25px;
+    }
+
+    .benefits {
+        margin-bottom: 60px;
+    }
+
+    .benefits__wrap {
+        box-shadow: none;
+    }
+
+    .benefits__title {
+        padding: 55px 15px;
+    }
+
+    .benefits__cards {
+        padding: 0 15px;
+        grid-column-gap: 35px;
+    }
+
+    .benefits__card {
+        margin-bottom: 55px;
+    }
+
+    .places {
+        margin-bottom: 105px;
+    }
+
+    .places__card_size_lg {
+        grid-column: span 6;
+        margin-bottom: 5px;
+    }
+
+    .places__card_size_sm {
+        grid-column: span 6;
+        margin-bottom: 5px;
+    }
+
+    .tours__tour {
+        grid-column-gap: 25px; 
+    }
+
+    .tour__info {
+        padding: 0;
+    }
+
+    .tour__title {
+        margin-bottom: 25px;
+    }
+
+    .tour__desc {
+        margin-bottom: 35px;
+    }
+
+    .tours__tour {
+        margin-bottom: 55px;
+    }
+
+    .top__cards {
+        grid-column-gap: 25px;
+        grid-row-gap: 55px;
+    }
+
+    .top__card {
+        grid-column: span 3;
+    }
+
+    .top__card-pic {
+        margin-bottom: 25px;
+    }
+
+    .footer {
+        padding: 55px 0;
+    }
+       
+
+}
 
 
 @media screen and (max-width: 767px) {
