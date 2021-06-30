@@ -18,7 +18,12 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-family: 'Lato';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5rem;
+  font-weight: normal;
+  color: #102746;
   font: inherit;
   vertical-align: baseline;
 }
@@ -394,15 +399,6 @@ html {
 
 *, *::before, *::after {
   box-sizing: inherit;
-}
-
-body {
-  font-family: 'Lato';
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.2;
-  font-weight: normal;
-  color: #102746;
 }
 
 img {
@@ -853,9 +849,6 @@ img {
 
 .top__card-likes {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #fff;
   padding-right: 20px;
   background: url(../img/svg/heart.svg) no-repeat right;
   margin-right: 14px;
@@ -863,11 +856,13 @@ img {
 
 .top__card-comments {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #fff;
   padding-right: 23px;
   background: url(../img/svg/comments.svg) no-repeat right;
+}
+
+.top__card-likes-value,
+.top__card-comments-value {
+  color: #fff;
 }
 
 .top__card-desc {
